@@ -11,7 +11,7 @@ namespace myun2
 			class mul
 			{
 			private:
-				const LeftType& lvalue
+				const LeftType& lvalue;
 				const RightType& rvalue;
 			public:
 				mul(const LeftType& l, const RightType& r) : lvalue(l), rvalue(r) {}

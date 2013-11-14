@@ -11,7 +11,7 @@ namespace myun2
 			class sub
 			{
 			private:
-				const LeftType& lvalue
+				const LeftType& lvalue;
 				const RightType& rvalue;
 			public:
 				sub(const LeftType& l, const RightType& r) : lvalue(l), rvalue(r) {}
