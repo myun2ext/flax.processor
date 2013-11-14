@@ -7,8 +7,15 @@ namespace myun2
 	{
 		namespace proc
 		{
+			template <typename LeftType, typename RightType>
 			class add
 			{
+			private:
+				const LeftType& lvalue
+				const RightType& rvalue;
+			public:
+				add(const LeftType& l, const RightType& r) : lvalue(l), rvalue(r) {}
+				LeftType exec() const { return lvalue + rvalue; }
 			};
 		}
 	}
