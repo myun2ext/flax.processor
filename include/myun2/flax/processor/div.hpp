@@ -1,5 +1,5 @@
-#ifndef __github_com_myun2__flax__processor__mul_HPP__
-#define __github_com_myun2__flax__processor__mul_HPP__
+#ifndef __github_com_myun2__flax__processor__div_HPP__
+#define __github_com_myun2__flax__processor__div_HPP__
 
 namespace myun2
 {
@@ -21,4 +21,4 @@ namespace myun2
 	}
 }
 
-#endif//__github_com_myun2__flax__processor__mul_HPP__
+#endif//__github_com_myun2__flax__processor__div_HPP__
