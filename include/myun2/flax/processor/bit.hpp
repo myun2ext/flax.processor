@@ -14,7 +14,7 @@ namespace myun2
 				const Type& value
 				int shifts;
 			public:
-				add(const Type& v, int shift_count) : value(v), shifts(shift_count) {}
+				lshift(const Type& v, int shift_count) : value(v), shifts(shift_count) {}
 				Type exec() const { return value << shifts; }
 			};
 
@@ -25,8 +25,19 @@ namespace myun2
 				const Type& value
 				int shifts;
 			public:
-				add(const Type& v, int shift_count) : value(v), shifts(shift_count) {}
+				rshift(const Type& v, int shift_count) : value(v), shifts(shift_count) {}
 				Type exec() const { return value >> shifts; }
+			};
+
+			template <typename Type, typename MaskType=unsigned int>
+			class bit_mask
+			{
+			private:
+				const Type& value
+				const MaskType& mask;
+			public:
+				bit_mask(const Type& v, const MaskType& mask_in) : value(v), mask(mask_in) {}
+				Type exec() const { return value & mask; }
 			};
 		}
 	}
