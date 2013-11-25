@@ -5,6 +5,8 @@
 #include "myun2/flax/processor/sub.hpp"
 #include "myun2/flax/processor/mul.hpp"
 #include "myun2/flax/processor/div.hpp"
+#include "myun2/flax/processor/increment.hpp"
+#include "myun2/flax/processor/decrement.hpp"
 
 #include "myun2/flax/processor/bit.hpp"
 

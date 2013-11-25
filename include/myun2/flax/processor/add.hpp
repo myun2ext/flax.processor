@@ -17,6 +17,28 @@ namespace myun2
 				add(const LeftType& l, const RightType& r) : lvalue(l), rvalue(r) {}
 				LeftType exec() const { return lvalue + rvalue; }
 			};
+
+			template <typename LeftType, typename RightType>
+			class adder
+			{
+			private:
+				LeftType& lvalue;
+				const RightType& rvalue;
+			public:
+				adder(const LeftType& l, const RightType& r) : lvalue(l), rvalue(r) {}
+				LeftType exec() const { return lvalue += rvalue; }
+			};
+
+			template <typename LeftType, typename RightType>
+			class constant_adder
+			{
+			private:
+				const LeftType& lvalue;
+				const RightType& rvalue;
+			public:
+				constant_adder(const LeftType& l, const RightType& r) : lvalue(l), rvalue(r) {}
+				LeftType exec() const { return lvalue += rvalue; }
+			};
 		}
 	}
 }

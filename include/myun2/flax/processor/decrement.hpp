@@ -13,7 +13,7 @@ namespace myun2
 			private:
 				Type& value;
 			public:
-				increment(Type& v) : value(v) {}
+				decrement(Type& v) : value(v) {}
 				Type exec() const { return --value; }
 			};
 
